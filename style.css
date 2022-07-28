@@ -5,7 +5,8 @@
 }
 
 :root{
-    --leaf-green: #E5E7EB;
+    --leaf-green: #596D48;
+    --boarder-color: #E5E7EB;
 }
 
 body{
@@ -81,9 +82,10 @@ body{
 }
 
 .form-header{
-    padding: 20px 50px;
+    padding: 0px 50px;
+    margin-top: 100px;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .form-fields{
@@ -112,5 +114,42 @@ body{
 
 .form-fields > form > div > input{
     height: 25px;
-    
+    border-color: var(--boarder-color);
+    border-radius: 5px;
+    border-style: double;
+}
+
+.form-fields > form > div > input:focus{
+    border-color: deepskyblue;
+    border-style: groove;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 1px 5px black;
+}
+
+.form-footer{
+    padding: 20px 50px;
+}
+
+.form-footer > button {
+    border-radius: 10px;
+    background-color: var(--leaf-green);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+}
+
+.login-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--leaf-green);
+}
+
+.login-link:hover{
+    opacity: 0.8;
+}
+
+.form-footer > button:hover{
+    opacity: 0.8;
+    cursor: grab;
 }
