@@ -27,14 +27,14 @@
             </div>
             <div class="form-fields">
                 <h2>Let's do this!</h2>
-                <form action="#" method="post">
+                <form id="account-details" action="http://httpbin.org/post" method="post">
                     <div>
                         <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name">
+                        <input type="text" name="first_name" id="first_name" minlength="3" maxlength="20">
                     </div>
                     <div>
                         <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="last_name">
+                        <input type="text" name="last_name" id="last_name" minlength="3" maxlength="20">
                     </div>
                     <div>
                         <label for="email">Email</label>
@@ -42,20 +42,20 @@
                     </div>
                     <div>
                         <label for="ph_num">Phone Number</label>
-                        <input type="number" name="ph_num" id="ph_num">
+                        <input type="tel" name="ph_num" id="ph_num" pattern="[0-9]*" maxlength="20" title="Please only enter numbers, eg: 123456">
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input class="pwd" type="password" name="password" id="password" minlength="3" maxlength="20">
                     </div>
                     <div>
                         <label for="password_confirm">Confirm Password</label> 
-                        <input type="password" name="password_confirm" id="password_confirm">
+                        <input class="pwd" type="password" name="password_confirm" id="password_confirm" minlength="3" maxlength="20">
                     </div>
                 </form>
             </div>
             <div class="form-footer">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="account-details">Create Account</button>
                 <p>Already have an account? <a class="login-link" href="">Log in</a></p>
             </div>
         </div>

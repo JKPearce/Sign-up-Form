@@ -151,5 +151,5 @@ body{
 
 .form-footer > button:hover{
     opacity: 0.8;
-    cursor: grab;
+    cursor: pointer;
 }
