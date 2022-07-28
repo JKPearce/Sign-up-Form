@@ -73,6 +73,14 @@ body{
     height: 100%;
 }
 
+.error{
+    border: red solid;
+}
+
+.error-msg{
+    display: flex;
+}
+
 .form-wrapper{
     display: flex;
     flex-direction: column;
@@ -112,14 +120,14 @@ body{
     padding: 10px;
 }
 
-.form-fields > form > div > input{
+input{
     height: 25px;
     border-color: var(--boarder-color);
     border-radius: 5px;
     border-style: double;
 }
 
-.form-fields > form > div > input:focus{
+input:focus{
     border-color: deepskyblue;
     border-style: groove;
     border-radius: 5px;
@@ -153,3 +161,4 @@ body{
     opacity: 0.8;
     cursor: pointer;
 }
+
