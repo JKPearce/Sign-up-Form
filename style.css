@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo{
+    position: absolute;
+    top: 20vh;
+    padding: 10px 20px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.logo{
+    color: white;
+
+}
+
+.background-image{
+    height: 100vh;
+    min-width: max(30vh, 150px);
+}
