@@ -15,7 +15,6 @@ body{
     background-color: lightgray;
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
 .main{
@@ -29,8 +28,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    min-width: 25vh;
-    max-width: 50vh;
+    min-width: 30vw;
+    max-width: 35vw;
 }
 
 .company-logo{
@@ -77,8 +76,9 @@ body{
     border: red solid;
 }
 
-.error-msg{
-    display: flex;
+.password-error{
+    display: none;
+    color: red;
 }
 
 .form-wrapper{
